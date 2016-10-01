@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Manager</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700">
+  <link rel="stylesheet" type="text/css" href="fileCss.css">
+  <script type="text/javascript" src="javasc.js"></script>
+</head>
+<body>
+<div class="navbar" id="top">
+	<div class="container">
+		<div class="row">
+			<a href="#top" id="q">
+				Time Manager
+			</a>
+		</div>
+	</div>
+</div>
+<div id="motherTable">
+	<div id="cnTable">
+		<div id="detailcnTable">
+			<h3 style="margin-left:20px;">Calendar</h3>
+			<div id="groupbuttoncn" >
+				<a href="#" class="btn buttoncn">Calendar</a>
+				<a href="#" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Create Event</a>
+				<a href="#" class="btn buttoncn">Find Event</a>
+			</div>
+			<h3 style="margin-left:20px;">User</h3>
+			<div id="groupbuttoncn" >
+				<a href="#" class="btn buttoncn">Change Info</a>
+				<a href="#" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Find User</a>
+				<a href="#" class="btn buttoncn">Log Out</a>
+			</div>
+		</div>
+	</div>
+	<div id="dtTable">
+	 	<div class="fullrow">
+		    <a href="#" class="btn btn-default" style="margin: 8px;">Back</a>
+		    <a href="#" class="btn btn-default pull-right" style="margin: 8px;" id="btnShowModal">
+		    Save and exit</a> 
+		    <div class="modal fade" data-keyboard="false" data-backdrop="static" id="loginModal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+						<h4 class="modal-title" align="center">Enter Old Password to Complete Change</h4>
+							<form>
+								<div class="form-group">
+									<input type="text"  class="form-control" placeholder="Password" id="inputPassword">
+								</div>
+							</form>
+							<button class="btn btn-primary" type="submit">Comfirm</button>
+							<button class="btn btn-primary" id="btnHideModal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>   
+	 	</div>
+	 	<div class="row">
+	 		<div class="col-md-6" id="colc" style="border-right:  1px solid #ddd;margin-left:15px;">
+	 		<h3 align="center">Infomation</h3>
+	 			<div class="form-group">
+		          <label style="margin-top:20px;">Name</label>
+		          <input type="text" class="form-control">
+		        </div>
+		        <div class="form-group">
+		          <label style="margin-top:20px;">Phone</label>
+		          <input type="text" class="form-control">
+		        </div>
+		        <div class="form-group">
+		          <label style="margin-top:20px;">Email</label>
+		          <input type="text" class="form-control">
+		        </div>
+	 		</div>
+	 		<div class="col-md-6" id="colc">
+		 		<h3 align="center">Password</h3>
+		 		<div class="form-group">
+		          <label style="margin-top:20px;">New Password</label>
+		          <input type="text" class="form-control">
+		        </div>
+		        <div class="form-group">
+		          <label style="margin-top:20px;">Comfirm New Password</label>
+		          <input type="text" class="form-control">
+		        </div>
+	 		</div>
+	 	</div>
+	</div>
+</body>
