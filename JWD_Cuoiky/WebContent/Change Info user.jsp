@@ -46,7 +46,7 @@
 	</div>
 	<div id="dtTable">
 	 	<div class="fullrow">
-		    <a href="#" class="btn btn-default" style="margin: 3px;" onclick="location.href='Cn Calendar 2.html';">Back</a>
+		    <a href="#" class="btn btn-default" style="margin: 3px;" onclick="location.href='Cn Calendar 2.jsp';">Back</a>
 		    <input type="submit" class="btn btn-default pull-right" style="margin: 3px;" id="submitchangeinfofake" value="Save and exit"> 
 		    <div class="modal fade" data-keyboard="false" data-backdrop="static" id="loginModal" tabindex="-1">
 				<div class="modal-dialog">
@@ -68,26 +68,26 @@
 	 	<div class="mv-container">
 	 		<form id="qweasdzxc">
 	 			<div class="col-sm-6">
-			 		<div class="colleft" style="border-right:  1px solid #ddd;">
-			 		<h3 align="center">Infomation</h3>
-				        <label style="margin-top:20px;">Name</label>
+			 		<div class="colleft has-warning colcheck" style="border-right:  1px solid #ddd;" >
+			 			<h3 align="center">Infomation</h3>
+				        <label style="margin-top:20px;" id="nameip">Name</label>
+				        <input type="text" class="form-control has-error" required="true">
+				        <label style="margin-top:20px;" id="phoneip">Phone</label>
 				        <input type="text" class="form-control" required="true">
-				        <label style="margin-top:20px;">Phone</label>
-				        <input type="text" class="form-control" required="true">
-				        <label style="margin-top:20px;">Email</label>
-				        <input type="text" class="form-control" required="true">
+				        <label style="margin-top:20px;" id="emailip">Email</label>
+				        <input type="Email" class="form-control" required="true">
 			 		</div>
 		 		</div>
 		 		<div class="col-sm-6">
-			 		<div class="colright">
+			 		<div class="colright has-warning colcheck">
 					 	<h3 align="center">Password</h3>
 					    <label style="margin-top:20px;" >New Password</label>
 
-					    <input type="password" class="form-control" required id="pass1" minlength="6">
+					    <input type="password" class="form-control has-error" required id="pass1" minlength="6" id="passip">
 
 					    <label style="margin-top:20px;" >Comfirm New Password</label>
 
-					    <input type="password" class="form-control" required id="pass2">    
+					    <input type="password" class="form-control" required id="pass2" id="Cpassip">
 			 		</div>
 		 		</div>
 		 		<input type="submit" name="" id="submitchangeinfo" class="hide" >

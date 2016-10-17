@@ -42,7 +42,7 @@
         <div id="dtTable">
             <div class="row" style="height: 100px;">
                 <div class="col-md-7">
-                    <textarea type="text" class="findEv" row="2" placeholder="Text here" style="resize: none;"></textarea>
+                    <input type="text" name="" class="input-lg findEv">
                 </div>
                 <div class="col-md-3">
                     <select class="findEvdn">

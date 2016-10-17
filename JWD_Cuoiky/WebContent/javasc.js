@@ -85,9 +85,12 @@ $(document).ready(function() {
     $("#submitchangeinfofake").on('click',function(){
         $("#submitchangeinfo").click();
     });
-    $('#backbutton').click(function(){
-         $("#submitchangeinfo").click(function(){
-         });
+    $("#submitchangeinfofake").click(function(){
+        if($('#nameip').val() == "" || $('#phoneip').val() == "" || $('#emailip').val() == "" || $('#passip').val() == "" || $('#Cpassip').val() == "")
+    	{
+    		$('.colcheck').remove("has-warning");
+    		$('.colcheck').addclass("has-error");
+    	}
     });
     var s = new Array(1,2,3,4,5,6);
     for (var i = 0; i > s.length ; i++) {
