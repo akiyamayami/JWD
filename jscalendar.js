@@ -1,4 +1,3 @@
-
   // these are labels for the days of the week
   cal_days_labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -99,4 +98,55 @@
     return this.html;
   } 
 
- 
+
+$(document).ready(function(){
+	var monthNow = cal_current_date.getMonth();
+    var yearNow = cal_current_date.getFullYear();
+    var flag = 1;
+    $('#thang').text(cal_months_labels[monthNow]);
+    $('#nam').text( yearNow);
+    var cal = new Calendar(monthNow, yearNow);
+    cal.generateHTML();
+    $('#dtTable').append(cal.getHTML());
+    
+    $('#btleft').click(function() {
+        monthNow--;
+        if (monthNow < 0) {
+            monthNow = 11;
+            yearNow--;
+        }
+        if (flag == 0) {
+            var cal = new Calendar(monthNow, yearNow);
+            cal.generateHTML();
+            $('#dtTable').append(cal.getHTML());
+            flag = 1;
+        } else {
+            $(".mv-container").remove();
+            var cal = new Calendar(monthNow, yearNow);
+            cal.generateHTML();
+            $('#dtTable').append(cal.getHTML());
+        }
+        $('#thang').text(cal_months_labels[monthNow]);
+        $('#nam').text(yearNow);
+    });
+    $('#btright').click(function() {
+        monthNow++;
+        if (monthNow > 11) {
+            monthNow = 0;
+            yearNow++;
+        }
+        if (flag == 0) {
+            var cal = new Calendar(monthNow, yearNow);
+            cal.generateHTML();
+            $('#dtTable').append(cal.getHTML());
+            flag = 1;
+        } else {
+            $(".mv-container").remove();
+            var cal = new Calendar(monthNow, yearNow);
+            cal.generateHTML();
+            $('#dtTable').append(cal.getHTML());
+        }
+        $('#thang').text(cal_months_labels[monthNow]);
+        $('#nam').text(yearNow);
+    });
+})
