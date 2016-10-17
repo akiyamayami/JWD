@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
@@ -16,7 +18,7 @@
     <div class="navbar" id="top">
         <div class="container">
             <div class="row">
-                <a href="Home Page.html" id="q">
+                <a href="Home Page.jsp" id="q">
                     <span class="glyphicon glyphicon-home"></span> Time Manager
                 </a>
             </div>

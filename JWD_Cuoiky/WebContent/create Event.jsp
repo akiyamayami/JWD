@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
@@ -23,7 +25,7 @@
                 this.responseText;
               }
             };
-            xhttp.open("GET", "create Event Repeat.html", true);
+            xhttp.open("GET", "create Event Repeat.jsp", true);
             xhttp.send();
           }
           function loadDoc2() {
@@ -34,7 +36,7 @@
                 this.responseText;
               }
             };
-            xhttp.open("GET", "create Event remind.html", true);
+            xhttp.open("GET", "create Event remind.jsp", true);
             xhttp.send();
           }
           function loadDoc3() {
@@ -45,7 +47,7 @@
                 this.responseText;
               }
             };
-            xhttp.open("GET", "create Event adduser.html", true);
+            xhttp.open("GET", "create Event adduser.jsp", true);
             xhttp.send();
           }
     </script>
@@ -55,7 +57,7 @@
     <div class="navbar" id="top">
         <div class="container">
             <div class="row">
-                <a href="Home Page.html" id="q">
+                <a href="Home Page.jsp" id="q">
                     <span class="glyphicon glyphicon-home"></span>
                     Time Manager
                 </a>
@@ -64,24 +66,24 @@
     </div>
     <div id="motherTable">
         <div id="cnTable">
-            <div id="detailcnTable">
-                <h3 style="margin-left:20px;margin-top: 6px;">Calendar</h3>
-                <div id="groupbuttoncn">
-                    <a href="Cn Calendar 2.html" class="btn buttoncn">Calendar</a>
-                    <a href="create Event.html" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Create Event</a>
-                    <a href="Find Event.html" class="btn buttoncn">Find Event</a>
-                </div>
-                <h3 style="margin-left:20px;">User</h3>
-                <div id="groupbuttoncn">
-                    <a href="Change Info user.html" class="btn buttoncn">Change Info</a>
-                    <a href="Find user user.html" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Find User</a>
-                    <a href="Home Page.html" class="btn buttoncn">Log Out</a>
-                </div>
-            </div>
-        </div>
+			<div id="detailcnTable">
+				<h3 style="margin-left:20px;margin-top: 6px;">Calendar</h3>
+				<div id="groupbuttoncn" >
+					<a href="Cn Calendar 2.jsp" class="btn buttoncn">Calendar</a>
+					<a href="create Event.jsp" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Create Event</a>
+					<a href="Find Event.jsp" class="btn buttoncn">Find Event</a>
+				</div>
+				<h3 style="margin-left:20px;">User</h3>
+				<div id="groupbuttoncn" >
+					<a href="Change Info user.jsp" class="btn buttoncn">Change Info</a>
+					<a href="Find user user.jsp" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Find User</a>
+					<a href="Home Page.jsp" class="btn buttoncn">Log Out</a>
+				</div>
+			</div>
+		</div>
         <div id="dtTable">
             <div class="fullrow">
-                <a href="Cn Calendar 2.html" class="btn btn-default" style="margin: 3px;">Back</a>
+                <a href="Cn Calendar 2.jsp" class="btn btn-default" style="margin: 3px;">Back</a>
                 <a href="#" class="btn btn-default pull-right" style="margin: 3px;">Delete</a>
                 <a href="#" class="btn btn-default pull-right" style="margin: 3px;" id="subnow"> Save and exit </a>
             </div>

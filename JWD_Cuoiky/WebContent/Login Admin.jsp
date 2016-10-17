@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
     <title>Time Manager</title>
@@ -14,7 +16,7 @@
 <div class="navbar" id="top">
   <div class="container">
     <div class="row">
-      <a href="Home Page.html" id="q">
+      <a href="Home Page.jsp" id="q">
        <span class="glyphicon glyphicon-home"></span>
        Time Manager
       </a>
@@ -26,8 +28,8 @@
     <div id="detailcnTable">
       <h3 style="margin-left:20px;">Admin</h3>
       <div id="groupbuttoncn" >
-        <a href="Find user admin.html" class="btn buttoncn">Find User</a>
-        <a href="Home Page.html" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Log out</a>
+        <a href="Find user admin.jsp" class="btn buttoncn">Find User</a>
+        <a href="Home Page.jsp" class="btn buttoncn" style="margin:10px 0px 10px 0px;">Log out</a>
       </div>
     </div>
   </div>
