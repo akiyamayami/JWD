@@ -1,10 +1,11 @@
 $(document).ready(function() {
     
-    $('#btnShowModal').click(function() {
+    $('#submitbtn1').click(function() {
         $('#loginModal').modal('show');
     });
     $('#btnHideModal').click(function() {
-        $('#loginModal').modal('hide');
+      $('#loginModal').modal('hide');
+    	
     });
     $('input[type="radio"]').click(function() {
         if ($(this).attr("value") == "Never") {
@@ -80,17 +81,6 @@ $(document).ready(function() {
     });
     $("#subnow").on('click',function(){
         $("#subNameEvent").click();
-    });
-    var b = 0;
-    $("#submitchangeinfofake").on('click',function(){
-        $("#submitchangeinfo").click();
-    });
-    $("#submitchangeinfofake").click(function(){
-        if($('#nameip').val() == "" || $('#phoneip').val() == "" || $('#emailip').val() == "" || $('#passip').val() == "" || $('#Cpassip').val() == "")
-    	{
-    		$('.colcheck').remove("has-warning");
-    		$('.colcheck').addclass("has-error");
-    	}
     });
     var s = new Array(1,2,3,4,5,6);
     for (var i = 0; i > s.length ; i++) {

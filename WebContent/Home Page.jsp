@@ -47,9 +47,20 @@
   	</form>
   
 </div>
-
-<footer>
-	<a href="Register.jsp" class="login-forgot-pass" >Register</a>
+<a href="Register.jsp" class="login-forgot-pass" >Register</a>
+<footer style="border-top:1px solid #ff9e3f; background:black;">
+	<div id="footer">
+		<div class="container">
+			<div class="footer-box">
+				<div class="foot-l" style="color:white;">
+					DESIGNED AND POWERED BY 
+					<span><a href="https://www.facebook.com/gio.votinh.7549"> <b>LOI</b> </a></span> 
+					<span><a href="https://www.facebook.com/trungluan.ha?fref=ts"><b>LUAN</b></a></span> 
+					<span><a href="https://www.facebook.com/profile.php?id=100013232713495&fref=ts"><b>PHU</b></a></span> 
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 </body>
 </html>

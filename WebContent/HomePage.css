@@ -92,7 +92,7 @@ input:focus :-ms-input-placeholder {
 }
 
 .login-forgot-pass {
-  bottom: 0;
+  bottom: 20px;
   color: white;
   cursor: pointer;
   display: block;
@@ -175,7 +175,7 @@ h2{
 .mv-container {
     font-size: 12px;
     line-height: 14px;
-    height: 94%;
+    height: 93%;
     position: relative;
     white-space: nowrap;
     background: #fff;
@@ -291,4 +291,19 @@ table th{
 {
   color: white;
   padding-left: 15px;
+}
+
+#footer {
+    width: 100%;
+}
+.footer-box {
+    height: 30px;
+    position: relative;
+}
+.foot-l {
+    position: absolute;
+    left: 0;
+    top:5px;
+    text-transform: uppercase;
+    color:white;
 }
