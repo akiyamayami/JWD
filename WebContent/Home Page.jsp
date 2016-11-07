@@ -19,7 +19,7 @@
 <header class="navbar" id="top">
 	<div class="container">
 		<div class="row">
-			<a href="Home Page.html" id="q">
+			<a href="Home Page.jsp" id="q">
        <span class="glyphicon glyphicon-home"></span>
        Time Manager
       </a>
@@ -27,7 +27,7 @@
 	</div>
 </header>
 <div class="login">
-	<form class="login-form" action="loginAuthenticate.jsp">
+	<form class="login-form" action="loginbean.jsp">
 	    <p class="login-text">
 	      <span class="fa-stack fa-2x">
 	      <i class="fa fa-circle fa-stack-2x"></i>
@@ -35,8 +35,8 @@
 	    </span>
 	    </p>
 	    
-	    <input type="text" class="login-username" autofocus="true" required="true" placeholder="ID" name="ID" />
-	    <input type="password" class="login-password" required="true" placeholder="Password" name="Pass" />
+	    <input type="text" class="login-username" autofocus="true" required="true" placeholder="ID" name="userName" />
+	    <input type="password" class="login-password" required="true" placeholder="Password" name="password" />
 	    <label class="labelcheckbox"><input type="checkbox" />Remember Me</label>
 	    <input type="submit" value="Login" class="login-submit"/>
 	    <p style="color:red;">
