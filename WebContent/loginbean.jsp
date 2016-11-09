@@ -12,7 +12,7 @@
   		<jsp:setProperty name="db" property="password" value='<%=request.getParameter("password")%>'/>
 	</jsp:useBean>
 	<jsp:forward page="login">
-		<jsp:param name="username"   value='<%=db.getUserName()%>'/>
+		<jsp:param name="username" value='<%=db.getUserName()%>'/>
 		<jsp:param name="password" value='<%=db.getPassword()%>'/>
 	</jsp:forward>
 </body>
