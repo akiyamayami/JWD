@@ -84,6 +84,7 @@
                 </div>
             </div>
         </form>
+        <!--  
         <div class="modal fade" data-keyboard="false" data-backdrop="static" id="loginModal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -99,9 +100,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </div>
+<!--  
   	<script type="text/javascript">
   	var pass1 = document.getElementById('pass1');
 	var pass2 = document.getElementById('pass2');
@@ -159,7 +161,7 @@
   				}
   			});
   		});
-  	</script>
+  	</script>-->
 </body>
 </html>
 <!-- 			        -->

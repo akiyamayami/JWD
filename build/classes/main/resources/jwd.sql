@@ -1,8 +1,9 @@
 
 create table UserInfo(UserName char(10) primary key,
-					  FullName nvarchar(20),
+					  FirstName nvarchar(20),
+					  LastName nvarchar(20),
                       Password nvarchar(16),
-                      Email char(20),
+                      Email char(50),
                       Phone char(20),
                       Stt int,
                       RoleID char(10))
